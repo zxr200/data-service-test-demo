@@ -65,11 +65,15 @@
 
 **3.Mock**
 
--用Mock来隔离`requests.post`这个网络请求，
+-用Mock来隔离`requests.post`这个网络请求
 
 -在测试中模拟网络请求，网络超时
 
 -同时验证业务代码用正确的参数调用外部API
+
+## 运行
+
+`pytest -v`
 
 ## 测试结果
 
