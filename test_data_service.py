@@ -39,7 +39,7 @@ class TestDataService:
     ]) #2个测试用例
     @patch('data_service.requests.post') #把真实的requests.post替换成模拟的mock_post
     def test_process_dataset_with_mock(self,mock_post,data_service,valid_dataset,mock_status,
-                                       expected_success,expected_message):
+                                       expected_success,expected_message):#参数顺序：1.patch参数 2.Fixture参数 3.参数化参数
         mock_response=MagicMock() #创建一个假的响应对象
         mock_response.status_code=mock_status #status_code固有属性 设置假响应的状态码
         mock_post.return_value=mock_response #return_value固有属性 让模拟的post方法返回假响应
