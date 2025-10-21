@@ -8,7 +8,7 @@
 
 -**pytest框架**：编写并运行测试
 
--**Fixture**:`pytest.fixture`提供可以重用的测试资源，保证测试的独立性
+-**Fixture**：`pytest.fixture`提供可以重用的测试资源，保证测试的独立性
 
 -**参数化测试**：`@pytest.mark.parametrize`覆盖多种测试场景
 
